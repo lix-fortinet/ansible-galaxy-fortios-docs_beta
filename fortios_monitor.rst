@@ -115,11 +115,13 @@ Parameters
         </li>
         <li><span class="li-head">backup.system.config</span> - Backup system config 
         <ul class="ul-self">
-                <li><span class="li-required">destination</span> - Configuration file destination [file* | usb] <span class="li-normal">type: string  required: False </span> </li>
-                <li><span class="li-required">usb_filename</span> - When using 'usb' destination: the filename to save to on the connected USB device <span class="li-normal">type: string  required: False </span> </li>
+                <li><span class="li-required">destination</span> - Configuration file destination [file* | usb]. <span class="li-normal">type: string  required: False </span> </li>
+                <li><span class="li-required">usb_filename</span> - When using 'usb' destination: the filename to save to on the connected USB device. <span class="li-normal">type: string  required: False </span> </li>
                 <li><span class="li-required">password</span> - Password to encrypt configuration data. <span class="li-normal">type: string  required: False </span> </li>
                 <li><span class="li-required">scope</span> - Specify global or VDOM only backup [global | vdom]. <span class="li-normal">type: string  required: True </span> </li>
                 <li><span class="li-required">vdom</span> - If 'vdom' scope specified, the name of the VDOM to backup configuration. <span class="li-normal">type: string  required: False </span> </li>
+                <li><span class="li-required">password_mask</span> - True to replace all the secrects and passwords with a mask. <span class="li-normal">type: boolean  required: False </span> </li>
+                <li><span class="li-required">file_format</span> - Configuration file format [fos* | yaml]. <span class="li-normal">type: string  required: False </span> </li>
                 
             </ul>
         
@@ -366,6 +368,7 @@ Parameters
                 <li><span class="li-required">orgsize_id</span> - Organization size ID. <span class="li-normal">type: int  required: True </span> </li>
                 <li><span class="li-required">reseller_name</span> - Reseller name. <span class="li-normal">type: string  required: True </span> </li>
                 <li><span class="li-required">reseller_id</span> - Reseller ID. <span class="li-normal">type: int  required: True </span> </li>
+                <li><span class="li-required">is_government</span> - Set to true if the end-user is affiliated with a government. <span class="li-normal">type: boolean  required: False </span> </li>
                 
             </ul>
         
@@ -455,6 +458,14 @@ Parameters
             </ul>
         
         </li>
+        <li><span class="li-head">deregister-device.registration.forticare</span> - Deregister the FortiGate from a FortiCare account. 
+        <ul class="ul-self">
+                <li><span class="li-required">email</span> - FortiCare email. <span class="li-normal">type: string  required: True </span> </li>
+                <li><span class="li-required">password</span> - Account password. <span class="li-normal">type: string  required: True </span> </li>
+                
+            </ul>
+        
+        </li>
         <li><span class="li-head">deregister.endpoint-control.registration</span> - Deregister endpoint by FortiClient UID or MAC. 
         <ul class="ul-self">
                 <li><span class="li-required">uid</span> - Single FortiClient UID to deregister. <span class="li-normal">type: string  required: False </span> </li>
@@ -499,6 +510,15 @@ Parameters
         <li><span class="li-head">disconnect.system.modem</span> - Trigger a disconnect for the configured modem. 
         
         </li>
+        <li><span class="li-head">download-eval.system.vmlicense</span> - Download Evaluation VM License and reboot immediately if successful. 
+        <ul class="ul-self">
+                <li><span class="li-required">account_id</span> - FortiCare account email. <span class="li-normal">type: string  required: True </span> </li>
+                <li><span class="li-required">account_password</span> - FortiCare account password. <span class="li-normal">type: string  required: True </span> </li>
+                <li><span class="li-required">is_government</span> - Is the account in use by a government user? <span class="li-normal">type: boolean  required: False </span> </li>
+                
+            </ul>
+        
+        </li>
         <li><span class="li-head">download.switch-controller.fsw-firmware</span> - Download FortiSwitch firmware from FortiGuard to the FortiGate according to FortiSwitch image ID. 
         <ul class="ul-self">
                 <li><span class="li-required">image_id</span> - FortiSwitch image ID. <span class="li-normal">type: string  required: True </span> </li>
@@ -522,6 +542,13 @@ Parameters
         
         </li>
         <li><span class="li-head">dump.system.com-log</span> - Dump system com-log to file. 
+        
+        </li>
+        <li><span class="li-head">dynamic.system.external-resource</span> - Push updates to the specified external resource. 
+        <ul class="ul-self">
+                <li><span class="li-required">commands</span> - List of push commands to run. Each push command requires name of external resource, the push command name and a list of entries that the push command acts on. E.g [{"name":"Threat Feed","command":"snapshot","entries":["192.168.1.1","192.168.1.2"]}] <span class="li-normal">type: array  required: True </span> </li>
+                
+            </ul>
         
         </li>
         <li><span class="li-head">eject.system.usb-device</span> - Eject USB drives for safe removal. 
@@ -566,10 +593,6 @@ Parameters
         
         </li>
         <li><span class="li-head">format.system.logdisk</span> - Format log disk. 
-        <ul class="ul-self">
-                <li><span class="li-required">raid</span> - RAID level [Raid-0|Raid-1|Raid-5|Raid-10]. <span class="li-normal">type: string  required: True </span> </li>
-                
-            </ul>
         
         </li>
         <li><span class="li-head">generate-key.system.api-user</span> - Generate a new api-key for the specified api-key-auth admin. The old api-key will be replaced. The response contains the only chance to read the new api-key plaintext in the api_key field. 
@@ -719,6 +742,7 @@ Parameters
                 <li><span class="li-required">password</span> - Account password. <span class="li-normal">type: string  required: True </span> </li>
                 <li><span class="li-required">reseller_name</span> - Reseller name. <span class="li-normal">type: string  required: True </span> </li>
                 <li><span class="li-required">reseller_id</span> - Reseller ID. <span class="li-normal">type: int  required: True </span> </li>
+                <li><span class="li-required">is_government</span> - Set to true if the end-user is affiliated with a government. <span class="li-normal">type: boolean  required: False </span> </li>
                 
             </ul>
         
@@ -880,7 +904,9 @@ Parameters
                 <li><span class="li-required">email</span> - FortiCloud email. <span class="li-normal">type: string  required: True </span> </li>
                 <li><span class="li-required">password</span> - Password. <span class="li-normal">type: string  required: True </span> </li>
                 <li><span class="li-required">reseller</span> - Reseller. <span class="li-normal">type: string  required: True </span> </li>
+                <li><span class="li-required">reseller_id</span> - Reseller ID. <span class="li-normal">type: int  required: True </span> </li>
                 <li><span class="li-required">country</span> - Country. <span class="li-normal">type: string  required: True </span> </li>
+                <li><span class="li-required">is_government</span> - Set to true if the end-user is affiliated with a government. <span class="li-normal">type: boolean  required: False </span> </li>
                 
             </ul>
         
@@ -984,6 +1010,8 @@ Parameters
                 <li><span class="li-required">password</span> - Password to decrypt configuration data. <span class="li-normal">type: string  required: False </span> </li>
                 <li><span class="li-required">scope</span> - Specify global or VDOM only restore [global | vdom]. <span class="li-normal">type: string  required: True </span> </li>
                 <li><span class="li-required">vdom</span> - If 'vdom' scope specified, the name of the VDOM to restore configuration. <span class="li-normal">type: string  required: False </span> </li>
+                <li><span class="li-required">file_format</span> - Configuration file format [fos* | yaml]. <span class="li-normal">type: string  required: False </span> </li>
+                <li><span class="li-required">confirm_password_mask</span> - True to upload password mask config file. <span class="li-normal">type: boolean  required: False </span> </li>
                 <li><span class="li-required">file_content</span> - Provided when uploading a file: base64 encoded file data. Must not contain whitespace or other invalid base64 characters. Must be included in HTTP body. <span class="li-normal">type: string  required: False </span> </li>
                 
             </ul>
@@ -1085,6 +1113,13 @@ Parameters
         <ul class="ul-self">
                 <li><span class="li-required">group</span> - Guest group name. <span class="li-normal">type: string  required: True </span> </li>
                 <li><span class="li-required">guest</span> - Guest user IDs. <span class="li-normal">type: array  required: True </span> </li>
+                
+            </ul>
+        
+        </li>
+        <li><span class="li-head">soft-reset-neighbor.router.bgp</span> - BGP Neighbor soft reset. 
+        <ul class="ul-self">
+                <li><span class="li-required">ip</span> - IP address of neighbor to perform soft reset on. <span class="li-normal">type: string  required: True </span> </li>
                 
             </ul>
         
@@ -1413,6 +1448,13 @@ Parameters
             </ul>
         
         </li>
+        <li><span class="li-head">upload.system.hscalefw-license</span> - Update Hyperscale firewall license for hardware acceleration using license key. 
+        <ul class="ul-self">
+                <li><span class="li-required">license_key</span> - License key. Format:0000-0000-0000-0000-0000-0000-00. <span class="li-normal">type: string  required: True </span> </li>
+                
+            </ul>
+        
+        </li>
         <li><span class="li-head">upload.system.lte-modem</span> - Upload the modem firmware upgrade files. 
         <ul class="ul-self">
                 <li><span class="li-required">filename</span> - Firmware file being uploaded. <span class="li-normal">type: string  required: False </span> </li>
@@ -1470,7 +1512,7 @@ Parameters
         </li>
         <li><span class="li-head">verify-cert.endpoint-control.ems</span> - Verify EMS server certificate for a specific EMS. 
         <ul class="ul-self">
-                <li><span class="li-required">ems_name</span> - EMS server name (as defined in CLI table endpoint-control.fctems). <span class="li-normal">type: string  required: True </span> </li>
+                <li><span class="li-required">ems_id</span> - EMS server ID (as defined in CLI table endpoint-control.fctems). <span class="li-normal">type: int  required: True </span> </li>
                 <li><span class="li-required">fingerprint</span> - EMS server certificate fingerprint to check with. <span class="li-normal">type: string  required: True </span> </li>
                 
             </ul>

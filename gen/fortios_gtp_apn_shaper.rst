@@ -454,9 +454,9 @@ Examples
             apn:
              -
                 name: "default_name_5 (source gtp.apn.name gtp.apngrp.name)"
-            back_off_time: "6"
+            back_off_time: "0"
             id:  "7"
-            rate_limit: "8"
+            rate_limit: "0"
     
 
 

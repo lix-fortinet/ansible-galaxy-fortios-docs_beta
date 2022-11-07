@@ -135,7 +135,7 @@ Parameters
         endpoint-control_ems_cert-status
         <li><span class="li-head">endpoint-control_ems_cert-status</span> - Retrieve authentication status of the EMS server certificate for a specific EMS. 
         <ul class="ul-self">
-                <li><span class="li-required">ems_name</span> - EMS server name (as defined in CLI table endpoint-control.fctems). <span class="li-normal">type: string</span> <span class="li-normal">required: True</span> </li>
+                <li><span class="li-required">ems_id</span> - EMS server ID (as defined in CLI table endpoint-control.fctems). <span class="li-normal">type: int</span> <span class="li-normal">required: True</span> </li>
                 <li><span class="li-required">with_cert</span> - Return detailed certificate information. Available when the certificate is authenticated by installed CA certificates.  <span class="li-normal">type: boolean</span> <span class="li-normal">required: False</span> </li>
                 
             </ul>
@@ -144,8 +144,7 @@ Parameters
         endpoint-control_ems_status
         <li><span class="li-head">endpoint-control_ems_status</span> - Retrieve EMS connection status for a specific EMS. 
         <ul class="ul-self">
-                <li><span class="li-required">ems_name</span> - EMS server name (as defined in CLI table endpoint-control.fctems). <span class="li-normal">type: string</span> <span class="li-normal">required: False</span> </li>
-                <li><span class="li-required">ems_serial</span> - EMS serial <span class="li-normal">type: string</span> <span class="li-normal">required: False</span> </li>
+                <li><span class="li-required">ems_id</span> - EMS server ID (as defined in CLI table endpoint-control.fctems). <span class="li-normal">type: int</span> <span class="li-normal">required: False</span> </li>
                 
             </ul>
         
@@ -197,7 +196,8 @@ Parameters
         extender-controller_extender
         <li><span class="li-head">extender-controller_extender</span> - Retrieve statistics for specific configured FortiExtender units. 
         <ul class="ul-self">
-                <li><span class="li-required">name</span> - List of FortiExtender names. <span class="li-normal">type: array</span> <span class="li-normal">required: False</span> </li>
+                <li><span class="li-required">name</span> - Filter: list of FortiExtender names. To be deprecated in FortiOS v7.4.0. <span class="li-normal">type: array</span> <span class="li-normal">required: False</span> </li>
+                <li><span class="li-required">fortiextender-name</span> - Filter: list of FortiExtender name. Retrieve statistics for all configured FortiExtender units unless specified. <span class="li-normal">type: array</span> <span class="li-normal">required: False</span> </li>
                 <li><span class="li-required">type</span> - Statistic type.'type' options are [system | modem | usage | last]. If 'type' is not specified, all types of statistics are retrieved. <span class="li-normal">type: string</span> <span class="li-normal">required: False</span> </li>
                 
             </ul>
@@ -353,6 +353,14 @@ Parameters
             </ul>
         
         </li>
+        firewall_network-service-dynamic
+        <li><span class="li-head">firewall_network-service-dynamic</span> - List of dynamic network service IP address and port pairs. 
+        <ul class="ul-self">
+                <li><span class="li-required">mkey</span> - Name of the dynamic network service entry. <span class="li-normal">type: string</span> <span class="li-normal">required: True</span> </li>
+                
+            </ul>
+        
+        </li>
         firewall_per-ip-shaper
         <li><span class="li-head">firewall_per-ip-shaper</span> 
         
@@ -477,7 +485,6 @@ Parameters
                 <li><span class="li-required">web-domain</span> - Filter: Web domain. <span class="li-normal">type: string</span> <span class="li-normal">required: False</span> </li>
                 <li><span class="li-required">web-category</span> - Filter: Web category. <span class="li-normal">type: string</span> <span class="li-normal">required: False</span> </li>
                 <li><span class="li-required">fortiasic</span> - Filter: 1 to include NPU accelerated sessions, 0 to exclude. <span class="li-normal">type: int</span> <span class="li-normal">required: False</span> </li>
-                <li><span class="li-required">nturbo</span> - Filter: 1 to include nTurbo sessions, 0 to exclude. <span class="li-normal">type: int</span> <span class="li-normal">required: False</span> </li>
                 
             </ul>
         
@@ -575,6 +582,14 @@ Parameters
                 <li><span class="li-required">start</span> - Start timestamp. <span class="li-normal">type: int</span> <span class="li-normal">required: False</span> </li>
                 <li><span class="li-required">end</span> - End timestamp. <span class="li-normal">type: int</span> <span class="li-normal">required: False</span> </li>
                 <li><span class="li-required">ip_version</span> - IP version [*ipv4 | ipv6 | ipboth]. <span class="li-normal">type: string</span> <span class="li-normal">required: False</span> </li>
+                
+            </ul>
+        
+        </li>
+        geoip_geoip-query
+        <li><span class="li-head">geoip_geoip-query</span> - Retrieve location details for IPs queried against FortiGuard's geoip service. 
+        <ul class="ul-self">
+                <li><span class="li-required">ip_addresses</span> - One or more IP address strings to query for location details. <span class="li-normal">type: string</span> <span class="li-normal">required: True</span> </li>
                 
             </ul>
         
@@ -1202,6 +1217,19 @@ Parameters
         <li><span class="li-head">system_config-sync_status</span> 
         
         </li>
+        system_config_backup
+        <li><span class="li-head">system_config_backup</span> - Backup system config 
+        <ul class="ul-self">
+                <li><span class="li-required">destination</span> - Configuration file destination [file*] <span class="li-normal">type: string</span> <span class="li-normal">required: False</span> </li>
+                <li><span class="li-required">password</span> - Password to encrypt configuration data. <span class="li-normal">type: string</span> <span class="li-normal">required: False</span> </li>
+                <li><span class="li-required">scope</span> - Specify global or VDOM only backup [global | vdom]. <span class="li-normal">type: string</span> <span class="li-normal">required: True</span> </li>
+                <li><span class="li-required">vdom</span> - If 'vdom' scope specified, the name of the VDOM to backup configuration. <span class="li-normal">type: string</span> <span class="li-normal">required: False</span> </li>
+                <li><span class="li-required">password_mask</span> - True to replace all the secrects and passwords with a mask. <span class="li-normal">type: boolean</span> <span class="li-normal">required: False</span> </li>
+                <li><span class="li-required">file_format</span> - Configuration file format [fos* | yaml]. <span class="li-normal">type: string</span> <span class="li-normal">required: False</span> </li>
+                
+            </ul>
+        
+        </li>
         system_config_restore-status
         <li><span class="li-head">system_config_restore-status</span> - Check the status of the restoring system configuration session. 
         <ul class="ul-self">
@@ -1222,6 +1250,7 @@ Parameters
         <li><span class="li-head">system_csf</span> - Retrieve a full tree of downstream FortiGates registered to the Security Fabric. 
         <ul class="ul-self">
                 <li><span class="li-required">scope</span> - Scope from which to retrieve the Security Fabric tree [vdom*|global]. <span class="li-normal">type: string</span> <span class="li-normal">required: False</span> </li>
+                <li><span class="li-required">all_vdoms</span> - Include information from all VDOMs that the admin can access. Only applies for scope=vdom <span class="li-normal">type: boolean</span> <span class="li-normal">required: False</span> </li>
                 
             </ul>
         
@@ -1319,6 +1348,14 @@ Parameters
         <li><span class="li-head">system_ha-history</span> 
         
         </li>
+        system_ha-hw-interface
+        <li><span class="li-head">system_ha-hw-interface</span> 
+        
+        </li>
+        system_ha-nonsync-checksums
+        <li><span class="li-head">system_ha-nonsync-checksums</span> 
+        
+        </li>
         system_ha-peer
         <li><span class="li-head">system_ha-peer</span> - Get configuration of peer(s) in HA cluster. Uptime is expressed in seconds. 
         <ul class="ul-self">
@@ -1406,6 +1443,10 @@ Parameters
         <li><span class="li-head">system_ipam_status</span> 
         
         </li>
+        system_ipam_utilization
+        <li><span class="li-head">system_ipam_utilization</span> 
+        
+        </li>
         system_ipconf
         <li><span class="li-head">system_ipconf</span> - Determine if there is an IP conflict for a specific IP using ARP. 
         <ul class="ul-self">
@@ -1450,7 +1491,8 @@ Parameters
                 <li><span class="li-required">q_name</span> - The CMDB table's name <span class="li-normal">type: string</span> <span class="li-normal">required: False</span> </li>
                 <li><span class="li-required">qtypes</span> - List of CMDB table qTypes <span class="li-normal">type: array</span> <span class="li-normal">required: False</span> </li>
                 <li><span class="li-required">scope</span> - Scope of resource [vdom|global]. <span class="li-normal">type: string</span> <span class="li-normal">required: False</span> </li>
-                <li><span class="li-required">mkey</span> - The mkey for the object <span class="li-normal">type: string</span> <span class="li-normal">required: True</span> </li>
+                <li><span class="li-required">mkey</span> - The mkey for the object <span class="li-normal">type: string</span> <span class="li-normal">required: False</span> </li>
+                <li><span class="li-required">child_path</span> - The child path for the object <span class="li-normal">type: string</span> <span class="li-normal">required: False</span> </li>
                 
             </ul>
         
@@ -1716,8 +1758,21 @@ Parameters
         <ul class="ul-self">
                 <li><span class="li-required">start</span> - Starting entry index. <span class="li-normal">type: int</span> <span class="li-normal">required: False</span> </li>
                 <li><span class="li-required">count</span> - Maximum number of entries to return. <span class="li-normal">type: int</span> <span class="li-normal">required: False</span> </li>
-                <li><span class="li-required">ipv4</span> - Include IPv4 user (default=true). <span class="li-normal">type: boolean</span> <span class="li-normal">required: False</span> </li>
-                <li><span class="li-required">ipv6</span> - Include IPv6 users. <span class="li-normal">type: boolean</span> <span class="li-normal">required: False</span> </li>
+                <li><span class="li-required">ipv4</span> - Include IPv4 users (default=true). <span class="li-normal">type: boolean</span> <span class="li-normal">required: False</span> </li>
+                <li><span class="li-required">ipv6</span> - Include IPv6 users (default=false). <span class="li-normal">type: boolean</span> <span class="li-normal">required: False</span> </li>
+                <li><span class="li-required">include_wad</span> - Include explicit proxy users (default=true). <span class="li-normal">type: boolean</span> <span class="li-normal">required: False</span> </li>
+                <li><span class="li-required">include_fsso</span> - Include FSSO users (default=true). <span class="li-normal">type: boolean</span> <span class="li-normal">required: False</span> </li>
+                
+            </ul>
+        
+        </li>
+        user_firewall_count
+        <li><span class="li-head">user_firewall_count</span> - Get the number of authenticated firewall users. 
+        <ul class="ul-self">
+                <li><span class="li-required">ipv4</span> - Include IPv4 users (default=true). <span class="li-normal">type: boolean</span> <span class="li-normal">required: False</span> </li>
+                <li><span class="li-required">ipv6</span> - Include IPv6 users (default=false). <span class="li-normal">type: boolean</span> <span class="li-normal">required: False</span> </li>
+                <li><span class="li-required">include_wad</span> - Include explicit proxy users (default=true). <span class="li-normal">type: boolean</span> <span class="li-normal">required: False</span> </li>
+                <li><span class="li-required">include_fsso</span> - Include FSSO users (default=true). <span class="li-normal">type: boolean</span> <span class="li-normal">required: False</span> </li>
                 
             </ul>
         
@@ -1799,6 +1854,14 @@ Parameters
         </li>
         utm_blacklisted-certificates_statistics
         <li><span class="li-head">utm_blacklisted-certificates_statistics</span> 
+        
+        </li>
+        utm_rating-lookup
+        <li><span class="li-head">utm_rating-lookup</span> - Lookup FortiGuard rating for a specific URL. 
+        <ul class="ul-self">
+                <li><span class="li-required">url</span> - List of URLs to query. <span class="li-normal">type: array</span> <span class="li-normal">required: False</span> </li>
+                
+            </ul>
         
         </li>
         videofilter_fortiguard-categories
@@ -2056,6 +2119,14 @@ Parameters
         <li><span class="li-head">wifi_spectrum</span> - Retrieve spectrum analysis information for a specific FortiAP. 
         <ul class="ul-self">
                 <li><span class="li-required">wtp_id</span> - FortiAP ID to query. <span class="li-normal">type: string</span> <span class="li-normal">required: True</span> </li>
+                
+            </ul>
+        
+        </li>
+        wifi_station-capability
+        <li><span class="li-head">wifi_station-capability</span> - Retrieve a list of stations and their capability to connect to detected access points. 
+        <ul class="ul-self">
+                <li><span class="li-required">mac_address</span> - Station MAC address. <span class="li-normal">type: string</span> <span class="li-normal">required: False</span> </li>
                 
             </ul>
         

@@ -1596,7 +1596,7 @@ Examples
           access_token: "<your_own_value>"
           firewall_vip46:
             arp_reply: "disable"
-            color: "4"
+            color: "0"
             comment: "Comment."
             extip: "<your_own_value>"
             extport: "<your_own_value>"
@@ -1614,16 +1614,16 @@ Examples
              -
                 client_ip: "<your_own_value>"
                 healthcheck: "disable"
-                holddown_interval: "20"
+                holddown_interval: "300"
                 id:  "21"
                 ip: "<your_own_value>"
-                max_connections: "23"
+                max_connections: "0"
                 monitor:
                  -
                     name: "default_name_25 (source firewall.ldb-monitor.name)"
-                port: "26"
+                port: "0"
                 status: "active"
-                weight: "28"
+                weight: "1"
             server_type: "http"
             src_filter:
              -
