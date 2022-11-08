@@ -18103,7 +18103,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">schedule</span> - Firewall schedules for enabling this VAP on the FortiAP. This VAP will be enabled when at least one of the schedules is valid. Separate multiple schedule names with a space. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">schedule</span> - Firewall schedules for enabling this VAP on the FortiAP. This VAP will be enabled when at least one of the schedules is valid. Separate multiple schedule names with a space. <span class="li-normal">type: list</span>
  <a id='label318' href="javascript:ContentClick('label319', 'label318');" onmouseover="ContentPreview('label319');" onmouseout="ContentUnpreview('label319');" title="click to collapse or expand..."> more... </a>
  <div id="label319" style="display:none">
  <table border="1">
@@ -18160,9 +18160,68 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">secondary_wag_profile</span> - Secondary wireless access gateway profile name. Source wireless-controller.wag-profile.name. <span class="li-normal">type: str</span>
+            <ul class="ul-self">
+            <li> <span class="li-head">name</span> - Schedule name. Source firewall.schedule.group.name firewall.schedule.recurring.name firewall.schedule.onetime.name. <span class="li-normal">type: str</span>
  <a id='label320' href="javascript:ContentClick('label321', 'label320');" onmouseover="ContentPreview('label321');" onmouseout="ContentUnpreview('label321');" title="click to collapse or expand..."> more... </a>
  <div id="label321" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">v6.0.0 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.5 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.11 </code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 </code></td>
+ <td><code class="docutils literal notranslate">v6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">v6.2.5 </code></td>
+ <td><code class="docutils literal notranslate">v6.2.7 </code></td>
+ <td><code class="docutils literal notranslate">v6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">v6.4.1 </code></td>
+ <td><code class="docutils literal notranslate">v6.4.4 </code></td>
+ <td><code class="docutils literal notranslate">v7.0.0 </code></td>
+ <td><code class="docutils literal notranslate">v7.0.1 </code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 </code></td>
+ <td><code class="docutils literal notranslate">v7.0.3 </code></td>
+ <td><code class="docutils literal notranslate">v7.0.4 </code></td>
+ <td><code class="docutils literal notranslate">v7.0.5 </code></td>
+ <td><code class="docutils literal notranslate">v7.0.6 </code></td>
+ <td><code class="docutils literal notranslate">v7.0.7 </code></td>
+ <td><code class="docutils literal notranslate">v7.0.8 </code></td>
+ <td><code class="docutils literal notranslate">v7.2.0 </code></td>
+ <td><code class="docutils literal notranslate">v7.2.1 </code></td>
+ <td><code class="docutils literal notranslate">v7.2.2 </code></td>
+ </tr>
+ <tr>
+ <td>name</td>
+ <td>no</td>
+ <td>no</td>
+ <td>no</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ <td>yes</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            </ul>
+        <li> <span class="li-head">secondary_wag_profile</span> - Secondary wireless access gateway profile name. Source wireless-controller.wag-profile.name. <span class="li-normal">type: str</span>
+ <a id='label322' href="javascript:ContentClick('label323', 'label322');" onmouseover="ContentPreview('label323');" onmouseout="ContentUnpreview('label323');" title="click to collapse or expand..."> more... </a>
+ <div id="label323" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -18218,8 +18277,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">security</span> - Security mode for the wireless interface . <span class="li-normal">type: str</span> <span class="li-normal">choices: open, captive-portal, wep64, wep128, wpa-personal, wpa-personal+captive-portal, wpa-enterprise, wpa-only-personal, wpa-only-personal+captive-portal, wpa-only-enterprise, wpa2-only-personal, wpa2-only-personal+captive-portal, wpa2-only-enterprise, wpa3-enterprise, wpa3-only-enterprise, wpa3-enterprise-transition, wpa3-sae, wpa3-sae-transition, owe, osen</span>
- <a id='label322' href="javascript:ContentClick('label323', 'label322');" onmouseover="ContentPreview('label323');" onmouseout="ContentUnpreview('label323');" title="click to collapse or expand..."> more... </a>
- <div id="label323" style="display:none">
+ <a id='label324' href="javascript:ContentClick('label325', 'label324');" onmouseover="ContentPreview('label325');" onmouseout="ContentUnpreview('label325');" title="click to collapse or expand..."> more... </a>
+ <div id="label325" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -18775,8 +18834,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">security_exempt_list</span> - Optional security exempt list for captive portal authentication. Source user.security-exempt-list.name. <span class="li-normal">type: str</span>
- <a id='label324' href="javascript:ContentClick('label325', 'label324');" onmouseover="ContentPreview('label325');" onmouseout="ContentUnpreview('label325');" title="click to collapse or expand..."> more... </a>
- <div id="label325" style="display:none">
+ <a id='label326' href="javascript:ContentClick('label327', 'label326');" onmouseover="ContentPreview('label327');" onmouseout="ContentUnpreview('label327');" title="click to collapse or expand..."> more... </a>
+ <div id="label327" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -18832,8 +18891,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">security_obsolete_option</span> - Enable/disable obsolete security options. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label326' href="javascript:ContentClick('label327', 'label326');" onmouseover="ContentPreview('label327');" onmouseout="ContentUnpreview('label327');" title="click to collapse or expand..."> more... </a>
- <div id="label327" style="display:none">
+ <a id='label328' href="javascript:ContentClick('label329', 'label328');" onmouseover="ContentPreview('label329');" onmouseout="ContentUnpreview('label329');" title="click to collapse or expand..."> more... </a>
+ <div id="label329" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -18871,8 +18930,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">security_redirect_url</span> - Optional URL for redirecting users after they pass captive portal authentication. <span class="li-normal">type: str</span>
- <a id='label328' href="javascript:ContentClick('label329', 'label328');" onmouseover="ContentPreview('label329');" onmouseout="ContentUnpreview('label329');" title="click to collapse or expand..."> more... </a>
- <div id="label329" style="display:none">
+ <a id='label330' href="javascript:ContentClick('label331', 'label330');" onmouseover="ContentPreview('label331');" onmouseout="ContentUnpreview('label331');" title="click to collapse or expand..."> more... </a>
+ <div id="label331" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -18928,8 +18987,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">selected_usergroups</span> - Selective user groups that are permitted to authenticate. <span class="li-normal">type: list</span>
- <a id='label330' href="javascript:ContentClick('label331', 'label330');" onmouseover="ContentPreview('label331');" onmouseout="ContentUnpreview('label331');" title="click to collapse or expand..."> more... </a>
- <div id="label331" style="display:none">
+ <a id='label332' href="javascript:ContentClick('label333', 'label332');" onmouseover="ContentPreview('label333');" onmouseout="ContentUnpreview('label333');" title="click to collapse or expand..."> more... </a>
+ <div id="label333" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -18986,8 +19045,8 @@ Parameters
  </li>
             <ul class="ul-self">
             <li> <span class="li-head">name</span> - User group name. Source user.group.name. <span class="li-normal">type: str</span>
- <a id='label332' href="javascript:ContentClick('label333', 'label332');" onmouseover="ContentPreview('label333');" onmouseout="ContentUnpreview('label333');" title="click to collapse or expand..."> more... </a>
- <div id="label333" style="display:none">
+ <a id='label334' href="javascript:ContentClick('label335', 'label334');" onmouseover="ContentPreview('label335');" onmouseout="ContentUnpreview('label335');" title="click to collapse or expand..."> more... </a>
+ <div id="label335" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -19044,8 +19103,8 @@ Parameters
  </li>
             </ul>
         <li> <span class="li-head">split_tunneling</span> - Enable/disable split tunneling . <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label334' href="javascript:ContentClick('label335', 'label334');" onmouseover="ContentPreview('label335');" onmouseout="ContentUnpreview('label335');" title="click to collapse or expand..."> more... </a>
- <div id="label335" style="display:none">
+ <a id='label336' href="javascript:ContentClick('label337', 'label336');" onmouseover="ContentPreview('label337');" onmouseout="ContentUnpreview('label337');" title="click to collapse or expand..."> more... </a>
+ <div id="label337" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -19151,8 +19210,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">ssid</span> - IEEE 802.11 service set identifier (SSID) for the wireless interface. Users who wish to use the wireless network must configure their computers to access this SSID name. <span class="li-normal">type: str</span>
- <a id='label336' href="javascript:ContentClick('label337', 'label336');" onmouseover="ContentPreview('label337');" onmouseout="ContentUnpreview('label337');" title="click to collapse or expand..."> more... </a>
- <div id="label337" style="display:none">
+ <a id='label338' href="javascript:ContentClick('label339', 'label338');" onmouseover="ContentPreview('label339');" onmouseout="ContentUnpreview('label339');" title="click to collapse or expand..."> more... </a>
+ <div id="label339" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -19208,8 +19267,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">sticky_client_remove</span> - Enable/disable sticky client remove to maintain good signal level clients in SSID . <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label338' href="javascript:ContentClick('label339', 'label338');" onmouseover="ContentPreview('label339');" onmouseout="ContentUnpreview('label339');" title="click to collapse or expand..."> more... </a>
- <div id="label339" style="display:none">
+ <a id='label340' href="javascript:ContentClick('label341', 'label340');" onmouseover="ContentPreview('label341');" onmouseout="ContentUnpreview('label341');" title="click to collapse or expand..."> more... </a>
+ <div id="label341" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -19315,8 +19374,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">sticky_client_threshold_2g</span> - Minimum signal level/threshold in dBm required for the 2G client to be serviced by the AP (-95 to -20). <span class="li-normal">type: str</span>
- <a id='label340' href="javascript:ContentClick('label341', 'label340');" onmouseover="ContentPreview('label341');" onmouseout="ContentUnpreview('label341');" title="click to collapse or expand..."> more... </a>
- <div id="label341" style="display:none">
+ <a id='label342' href="javascript:ContentClick('label343', 'label342');" onmouseover="ContentPreview('label343');" onmouseout="ContentUnpreview('label343');" title="click to collapse or expand..."> more... </a>
+ <div id="label343" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -19372,8 +19431,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">sticky_client_threshold_5g</span> - Minimum signal level/threshold in dBm required for the 5G client to be serviced by the AP (-95 to -20). <span class="li-normal">type: str</span>
- <a id='label342' href="javascript:ContentClick('label343', 'label342');" onmouseover="ContentPreview('label343');" onmouseout="ContentUnpreview('label343');" title="click to collapse or expand..."> more... </a>
- <div id="label343" style="display:none">
+ <a id='label344' href="javascript:ContentClick('label345', 'label344');" onmouseover="ContentPreview('label345');" onmouseout="ContentUnpreview('label345');" title="click to collapse or expand..."> more... </a>
+ <div id="label345" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -19429,8 +19488,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">sticky_client_threshold_6g</span> - Minimum signal level/threshold in dBm required for the 6G client to be serviced by the AP (-95 to -20). <span class="li-normal">type: str</span>
- <a id='label344' href="javascript:ContentClick('label345', 'label344');" onmouseover="ContentPreview('label345');" onmouseout="ContentUnpreview('label345');" title="click to collapse or expand..."> more... </a>
- <div id="label345" style="display:none">
+ <a id='label346' href="javascript:ContentClick('label347', 'label346');" onmouseover="ContentPreview('label347');" onmouseout="ContentUnpreview('label347');" title="click to collapse or expand..."> more... </a>
+ <div id="label347" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -19486,8 +19545,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">target_wake_time</span> - Enable/disable 802.11ax target wake time . <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label346' href="javascript:ContentClick('label347', 'label346');" onmouseover="ContentPreview('label347');" onmouseout="ContentUnpreview('label347');" title="click to collapse or expand..."> more... </a>
- <div id="label347" style="display:none">
+ <a id='label348' href="javascript:ContentClick('label349', 'label348');" onmouseover="ContentPreview('label349');" onmouseout="ContentUnpreview('label349');" title="click to collapse or expand..."> more... </a>
+ <div id="label349" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -19593,8 +19652,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">tkip_counter_measure</span> - Enable/disable TKIP counter measure. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label348' href="javascript:ContentClick('label349', 'label348');" onmouseover="ContentPreview('label349');" onmouseout="ContentUnpreview('label349');" title="click to collapse or expand..."> more... </a>
- <div id="label349" style="display:none">
+ <a id='label350' href="javascript:ContentClick('label351', 'label350');" onmouseover="ContentPreview('label351');" onmouseout="ContentUnpreview('label351');" title="click to collapse or expand..."> more... </a>
+ <div id="label351" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -19700,8 +19759,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">tunnel_echo_interval</span> - The time interval to send echo to both primary and secondary tunnel peers (1 - 65535 sec). <span class="li-normal">type: int</span>
- <a id='label350' href="javascript:ContentClick('label351', 'label350');" onmouseover="ContentPreview('label351');" onmouseout="ContentUnpreview('label351');" title="click to collapse or expand..."> more... </a>
- <div id="label351" style="display:none">
+ <a id='label352' href="javascript:ContentClick('label353', 'label352');" onmouseover="ContentPreview('label353');" onmouseout="ContentUnpreview('label353');" title="click to collapse or expand..."> more... </a>
+ <div id="label353" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -19757,8 +19816,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">tunnel_fallback_interval</span> - The time interval for secondary tunnel to fall back to primary tunnel (0 - 65535 sec). <span class="li-normal">type: int</span>
- <a id='label352' href="javascript:ContentClick('label353', 'label352');" onmouseover="ContentPreview('label353');" onmouseout="ContentUnpreview('label353');" title="click to collapse or expand..."> more... </a>
- <div id="label353" style="display:none">
+ <a id='label354' href="javascript:ContentClick('label355', 'label354');" onmouseover="ContentPreview('label355');" onmouseout="ContentUnpreview('label355');" title="click to collapse or expand..."> more... </a>
+ <div id="label355" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -19814,8 +19873,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">usergroup</span> - Firewall user group to be used to authenticate WiFi users. <span class="li-normal">type: list</span>
- <a id='label354' href="javascript:ContentClick('label355', 'label354');" onmouseover="ContentPreview('label355');" onmouseout="ContentUnpreview('label355');" title="click to collapse or expand..."> more... </a>
- <div id="label355" style="display:none">
+ <a id='label356' href="javascript:ContentClick('label357', 'label356');" onmouseover="ContentPreview('label357');" onmouseout="ContentUnpreview('label357');" title="click to collapse or expand..."> more... </a>
+ <div id="label357" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -19872,8 +19931,8 @@ Parameters
  </li>
             <ul class="ul-self">
             <li> <span class="li-head">name</span> - User group name. Source user.group.name. <span class="li-normal">type: str</span>
- <a id='label356' href="javascript:ContentClick('label357', 'label356');" onmouseover="ContentPreview('label357');" onmouseout="ContentUnpreview('label357');" title="click to collapse or expand..."> more... </a>
- <div id="label357" style="display:none">
+ <a id='label358' href="javascript:ContentClick('label359', 'label358');" onmouseover="ContentPreview('label359');" onmouseout="ContentUnpreview('label359');" title="click to collapse or expand..."> more... </a>
+ <div id="label359" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -19930,8 +19989,8 @@ Parameters
  </li>
             </ul>
         <li> <span class="li-head">utm_log</span> - Enable/disable UTM logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label358' href="javascript:ContentClick('label359', 'label358');" onmouseover="ContentPreview('label359');" onmouseout="ContentUnpreview('label359');" title="click to collapse or expand..."> more... </a>
- <div id="label359" style="display:none">
+ <a id='label360' href="javascript:ContentClick('label361', 'label360');" onmouseover="ContentPreview('label361');" onmouseout="ContentUnpreview('label361');" title="click to collapse or expand..."> more... </a>
+ <div id="label361" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -20037,8 +20096,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">utm_profile</span> - UTM profile name. Source wireless-controller.utm-profile.name. <span class="li-normal">type: str</span>
- <a id='label360' href="javascript:ContentClick('label361', 'label360');" onmouseover="ContentPreview('label361');" onmouseout="ContentUnpreview('label361');" title="click to collapse or expand..."> more... </a>
- <div id="label361" style="display:none">
+ <a id='label362' href="javascript:ContentClick('label363', 'label362');" onmouseover="ContentPreview('label363');" onmouseout="ContentUnpreview('label363');" title="click to collapse or expand..."> more... </a>
+ <div id="label363" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -20094,8 +20153,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">utm_status</span> - Enable to add one or more security profiles (AV, IPS, etc.) to the VAP. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label362' href="javascript:ContentClick('label363', 'label362');" onmouseover="ContentPreview('label363');" onmouseout="ContentUnpreview('label363');" title="click to collapse or expand..."> more... </a>
- <div id="label363" style="display:none">
+ <a id='label364' href="javascript:ContentClick('label365', 'label364');" onmouseover="ContentPreview('label365');" onmouseout="ContentUnpreview('label365');" title="click to collapse or expand..."> more... </a>
+ <div id="label365" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -20201,8 +20260,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vdom</span> - Name of the VDOM that the Virtual AP has been added to. Source system.vdom.name. <span class="li-normal">type: str</span>
- <a id='label364' href="javascript:ContentClick('label365', 'label364');" onmouseover="ContentPreview('label365');" onmouseout="ContentUnpreview('label365');" title="click to collapse or expand..."> more... </a>
- <div id="label365" style="display:none">
+ <a id='label366' href="javascript:ContentClick('label367', 'label366');" onmouseover="ContentPreview('label367');" onmouseout="ContentUnpreview('label367');" title="click to collapse or expand..."> more... </a>
+ <div id="label367" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -20220,8 +20279,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vlan_auto</span> - Enable/disable automatic management of SSID VLAN interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label366' href="javascript:ContentClick('label367', 'label366');" onmouseover="ContentPreview('label367');" onmouseout="ContentUnpreview('label367');" title="click to collapse or expand..."> more... </a>
- <div id="label367" style="display:none">
+ <a id='label368' href="javascript:ContentClick('label369', 'label368');" onmouseover="ContentPreview('label369');" onmouseout="ContentUnpreview('label369');" title="click to collapse or expand..."> more... </a>
+ <div id="label369" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -20327,8 +20386,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vlan_name</span> - Table for mapping VLAN name to VLAN ID. <span class="li-normal">type: list</span>
- <a id='label368' href="javascript:ContentClick('label369', 'label368');" onmouseover="ContentPreview('label369');" onmouseout="ContentUnpreview('label369');" title="click to collapse or expand..."> more... </a>
- <div id="label369" style="display:none">
+ <a id='label370' href="javascript:ContentClick('label371', 'label370');" onmouseover="ContentPreview('label371');" onmouseout="ContentUnpreview('label371');" title="click to collapse or expand..."> more... </a>
+ <div id="label371" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -20385,8 +20444,8 @@ Parameters
  </li>
             <ul class="ul-self">
             <li> <span class="li-head">name</span> - VLAN name. <span class="li-normal">type: str</span>
- <a id='label370' href="javascript:ContentClick('label371', 'label370');" onmouseover="ContentPreview('label371');" onmouseout="ContentUnpreview('label371');" title="click to collapse or expand..."> more... </a>
- <div id="label371" style="display:none">
+ <a id='label372' href="javascript:ContentClick('label373', 'label372');" onmouseover="ContentPreview('label373');" onmouseout="ContentUnpreview('label373');" title="click to collapse or expand..."> more... </a>
+ <div id="label373" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -20414,8 +20473,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">vlan_id</span> - VLAN ID. <span class="li-normal">type: int</span>
- <a id='label372' href="javascript:ContentClick('label373', 'label372');" onmouseover="ContentPreview('label373');" onmouseout="ContentUnpreview('label373');" title="click to collapse or expand..."> more... </a>
- <div id="label373" style="display:none">
+ <a id='label374' href="javascript:ContentClick('label375', 'label374');" onmouseover="ContentPreview('label375');" onmouseout="ContentUnpreview('label375');" title="click to collapse or expand..."> more... </a>
+ <div id="label375" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -20444,8 +20503,8 @@ Parameters
  </li>
             </ul>
         <li> <span class="li-head">vlan_pool</span> - VLAN pool. <span class="li-normal">type: list</span>
- <a id='label374' href="javascript:ContentClick('label375', 'label374');" onmouseover="ContentPreview('label375');" onmouseout="ContentUnpreview('label375');" title="click to collapse or expand..."> more... </a>
- <div id="label375" style="display:none">
+ <a id='label376' href="javascript:ContentClick('label377', 'label376');" onmouseover="ContentPreview('label377');" onmouseout="ContentUnpreview('label377');" title="click to collapse or expand..."> more... </a>
+ <div id="label377" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -20502,8 +20561,8 @@ Parameters
  </li>
             <ul class="ul-self">
             <li> <span class="li-head">id</span> - ID. <span class="li-normal">type: int</span>
- <a id='label376' href="javascript:ContentClick('label377', 'label376');" onmouseover="ContentPreview('label377');" onmouseout="ContentUnpreview('label377');" title="click to collapse or expand..."> more... </a>
- <div id="label377" style="display:none">
+ <a id='label378' href="javascript:ContentClick('label379', 'label378');" onmouseover="ContentPreview('label379');" onmouseout="ContentUnpreview('label379');" title="click to collapse or expand..."> more... </a>
+ <div id="label379" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -20559,8 +20618,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">wtp_group</span> - WTP group name. Source wireless-controller.wtp-group.name. <span class="li-normal">type: str</span>
- <a id='label378' href="javascript:ContentClick('label379', 'label378');" onmouseover="ContentPreview('label379');" onmouseout="ContentUnpreview('label379');" title="click to collapse or expand..."> more... </a>
- <div id="label379" style="display:none">
+ <a id='label380' href="javascript:ContentClick('label381', 'label380');" onmouseover="ContentPreview('label381');" onmouseout="ContentUnpreview('label381');" title="click to collapse or expand..."> more... </a>
+ <div id="label381" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -20617,8 +20676,8 @@ Parameters
  </li>
             </ul>
         <li> <span class="li-head">vlan_pooling</span> - Enable/disable VLAN pooling, to allow grouping of multiple wireless controller VLANs into VLAN pools . When set to wtp-group, VLAN pooling occurs with VLAN assignment by wtp-group. <span class="li-normal">type: str</span> <span class="li-normal">choices: wtp-group, round-robin, hash, disable</span>
- <a id='label380' href="javascript:ContentClick('label381', 'label380');" onmouseover="ContentPreview('label381');" onmouseout="ContentUnpreview('label381');" title="click to collapse or expand..."> more... </a>
- <div id="label381" style="display:none">
+ <a id='label382' href="javascript:ContentClick('label383', 'label382');" onmouseover="ContentPreview('label383');" onmouseout="ContentUnpreview('label383');" title="click to collapse or expand..."> more... </a>
+ <div id="label383" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -20774,8 +20833,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vlanid</span> - Optional VLAN ID. <span class="li-normal">type: int</span>
- <a id='label382' href="javascript:ContentClick('label383', 'label382');" onmouseover="ContentPreview('label383');" onmouseout="ContentUnpreview('label383');" title="click to collapse or expand..."> more... </a>
- <div id="label383" style="display:none">
+ <a id='label384' href="javascript:ContentClick('label385', 'label384');" onmouseover="ContentPreview('label385');" onmouseout="ContentUnpreview('label385');" title="click to collapse or expand..."> more... </a>
+ <div id="label385" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -20831,8 +20890,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">voice_enterprise</span> - Enable/disable 802.11k and 802.11v assisted Voice-Enterprise roaming . <span class="li-normal">type: str</span> <span class="li-normal">choices: disable, enable</span>
- <a id='label384' href="javascript:ContentClick('label385', 'label384');" onmouseover="ContentPreview('label385');" onmouseout="ContentUnpreview('label385');" title="click to collapse or expand..."> more... </a>
- <div id="label385" style="display:none">
+ <a id='label386' href="javascript:ContentClick('label387', 'label386');" onmouseover="ContentPreview('label387');" onmouseout="ContentUnpreview('label387');" title="click to collapse or expand..."> more... </a>
+ <div id="label387" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -20938,8 +20997,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">webfilter_profile</span> - WebFilter profile name. Source webfilter.profile.name. <span class="li-normal">type: str</span>
- <a id='label386' href="javascript:ContentClick('label387', 'label386');" onmouseover="ContentPreview('label387');" onmouseout="ContentUnpreview('label387');" title="click to collapse or expand..."> more... </a>
- <div id="label387" style="display:none">
+ <a id='label388' href="javascript:ContentClick('label389', 'label388');" onmouseover="ContentPreview('label389');" onmouseout="ContentUnpreview('label389');" title="click to collapse or expand..."> more... </a>
+ <div id="label389" style="display:none">
  <table border="1">
  <tr>
  <td></td>

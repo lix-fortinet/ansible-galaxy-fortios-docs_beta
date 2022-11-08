@@ -5373,12 +5373,16 @@ Parameters
  <td><code class="docutils literal notranslate">v6.0.0 </code></td>
  <td><code class="docutils literal notranslate">v6.0.5 </code></td>
  <td><code class="docutils literal notranslate">v6.0.11 </code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 </code></td>
+ <td><code class="docutils literal notranslate">v6.2.3 </code></td>
  </tr>
  <tr>
  <td>export_to_pool_flag</td>
- <td>no</td>
+ <td>yes</td>
+ <td>yes</td>
  <td>yes</td>
  <td>no</td>
+ <td>yes</td>
  </tr>
  </table>
  </div>
@@ -19603,7 +19607,6 @@ Examples
                 export_to: "<your_own_value> (source system.vdom.name)"
                 export_to_pool: "<your_own_value> (source switch-controller.virtual-port-pool.name)"
                 export_to_pool_flag: "0"
-                export_to_pool_flag: "0"
                 fec_capable: "0"
                 fec_state: "disabled"
                 fgt_peer_device_name: "<your_own_value>"
@@ -19695,7 +19698,7 @@ Examples
              -
                 csv: "enable"
                 facility: "kernel"
-                name: "default_name_172"
+                name: "default_name_171"
                 port: "514"
                 server: "192.168.100.40"
                 severity: "emergency"
@@ -19705,10 +19708,10 @@ Examples
                 events: "cpu-high"
                 hosts:
                  -
-                    id:  "180"
+                    id:  "179"
                     ip: "<your_own_value>"
-                id:  "182"
-                name: "default_name_183"
+                id:  "181"
+                name: "default_name_182"
                 query_v1_port: "161"
                 query_v1_status: "disable"
                 query_v2c_port: "161"
@@ -19734,7 +19737,7 @@ Examples
              -
                 auth_proto: "md5"
                 auth_pwd: "<your_own_value>"
-                name: "default_name_208"
+                name: "default_name_207"
                 priv_proto: "aes128"
                 priv_pwd: "<your_own_value>"
                 queries: "disable"
@@ -19744,7 +19747,7 @@ Examples
             static_mac:
              -
                 description: "<your_own_value>"
-                id:  "217"
+                id:  "216"
                 interface: "<your_own_value>"
                 mac: "<your_own_value>"
                 type: "static"
@@ -19757,7 +19760,7 @@ Examples
                 unknown_unicast: "enable"
             stp_instance:
              -
-                id:  "229"
+                id:  "228"
                 priority: "0"
             stp_settings:
                 forward_time: "15"
@@ -19765,7 +19768,7 @@ Examples
                 local_override: "enable"
                 max_age: "20"
                 max_hops: "20"
-                name: "default_name_237"
+                name: "default_name_236"
                 pending_timer: "4"
                 revision: "0"
                 status: "enable"
