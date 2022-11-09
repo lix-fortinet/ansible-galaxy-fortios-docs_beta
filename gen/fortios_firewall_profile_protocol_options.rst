@@ -2193,7 +2193,7 @@ Parameters
  </table>
  </div>
  </li>
-            <li> <span class="li-head">ssl_offloaded</span> - SSL decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: False, True</span>
+            <li> <span class="li-head">ssl_offloaded</span> - SSL decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: no, yes</span>
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <table border="1">
@@ -4749,7 +4749,7 @@ Parameters
  </table>
  </div>
  </li>
-            <li> <span class="li-head">ssl_offloaded</span> - SSL decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: False, True</span>
+            <li> <span class="li-head">ssl_offloaded</span> - SSL decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: no, yes</span>
  <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
  <div id="label109" style="display:none">
  <table border="1">
@@ -6674,7 +6674,7 @@ Parameters
  </table>
  </div>
  </li>
-            <li> <span class="li-head">ssl_offloaded</span> - SSL decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: False, True</span>
+            <li> <span class="li-head">ssl_offloaded</span> - SSL decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: no, yes</span>
  <a id='label150' href="javascript:ContentClick('label151', 'label150');" onmouseover="ContentPreview('label151');" onmouseout="ContentUnpreview('label151');" title="click to collapse or expand..."> more... </a>
  <div id="label151" style="display:none">
  <table border="1">
@@ -9252,7 +9252,7 @@ Parameters
  </table>
  </div>
  </li>
-            <li> <span class="li-head">ssl_offloaded</span> - SSL decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: False, True</span>
+            <li> <span class="li-head">ssl_offloaded</span> - SSL decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: no, yes</span>
  <a id='label212' href="javascript:ContentClick('label213', 'label212');" onmouseover="ContentPreview('label213');" onmouseout="ContentUnpreview('label213');" title="click to collapse or expand..."> more... </a>
  <div id="label213" style="display:none">
  <table border="1">
@@ -10421,7 +10421,7 @@ Parameters
  </table>
  </div>
  </li>
-            <li> <span class="li-head">ssl_offloaded</span> - SSL decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: False, True</span>
+            <li> <span class="li-head">ssl_offloaded</span> - SSL decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: no, yes</span>
  <a id='label238' href="javascript:ContentClick('label239', 'label238');" onmouseover="ContentPreview('label239');" onmouseout="ContentUnpreview('label239');" title="click to collapse or expand..."> more... </a>
  <div id="label239" style="display:none">
  <table border="1">
@@ -11173,7 +11173,7 @@ Parameters
  </table>
  </div>
  </li>
-            <li> <span class="li-head">ssl_offloaded</span> - SSL decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: False, True</span>
+            <li> <span class="li-head">ssl_offloaded</span> - SSL decryption and encryption performed by an external device. <span class="li-normal">type: str</span> <span class="li-normal">choices: no, yes</span>
  <a id='label258' href="javascript:ContentClick('label259', 'label258');" onmouseover="ContentPreview('label259');" onmouseout="ContentUnpreview('label259');" title="click to collapse or expand..."> more... </a>
  <div id="label259" style="display:none">
  <table border="1">

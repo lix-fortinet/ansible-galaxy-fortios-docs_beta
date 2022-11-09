@@ -778,7 +778,7 @@ Parameters
  </table>
  </div>
  </li>
-            <li> <span class="li-head">ipsec_enc_alg</span> - Encryption algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: None, des, 3des, aes128, aes192, aes256</span>
+            <li> <span class="li-head">ipsec_enc_alg</span> - Encryption algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: null, des, 3des, aes128, aes192, aes256</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <table border="1">
@@ -2794,7 +2794,7 @@ Parameters
  </table>
  </div>
  </li>
-                <li> <span class="li-head">ipsec_enc_alg</span> - Encryption algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: None, des, 3des, aes128, aes192, aes256</span>
+                <li> <span class="li-head">ipsec_enc_alg</span> - Encryption algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: null, des, 3des, aes128, aes192, aes256</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <table border="1">
@@ -4995,7 +4995,7 @@ Parameters
  </table>
  </div>
  </li>
-            <li> <span class="li-head">ipsec_enc_alg</span> - Encryption algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: None, des, 3des, aes128, aes192, aes256</span>
+            <li> <span class="li-head">ipsec_enc_alg</span> - Encryption algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: null, des, 3des, aes128, aes192, aes256</span>
  <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
  <div id="label113" style="display:none">
  <table border="1">

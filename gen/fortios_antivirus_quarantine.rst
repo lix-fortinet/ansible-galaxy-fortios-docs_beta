@@ -217,7 +217,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">destination</span> - Choose whether to quarantine files to the FortiGate disk or to FortiAnalyzer or to delete them instead of quarantining them. <span class="li-normal">type: str</span> <span class="li-normal">choices: None, disk, FortiAnalyzer</span>
+        <li> <span class="li-head">destination</span> - Choose whether to quarantine files to the FortiGate disk or to FortiAnalyzer or to delete them instead of quarantining them. <span class="li-normal">type: str</span> <span class="li-normal">choices: NULL, disk, FortiAnalyzer</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table border="1">

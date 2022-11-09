@@ -1799,7 +1799,7 @@ Parameters
  </table>
  </div>
  </li>
-                <li> <span class="li-head">password_protected</span> - Match password-protected files. <span class="li-normal">type: str</span> <span class="li-normal">choices: True, any</span>
+                <li> <span class="li-head">password_protected</span> - Match password-protected files. <span class="li-normal">type: str</span> <span class="li-normal">choices: yes, any</span>
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <table border="1">

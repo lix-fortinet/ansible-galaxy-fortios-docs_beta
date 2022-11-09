@@ -1311,7 +1311,7 @@ Parameters
  </div>
  </li>
             </ul>
-        <li> <span class="li-head">favorite</span> - Favorite. <span class="li-normal">type: str</span> <span class="li-normal">choices: False, True</span>
+        <li> <span class="li-head">favorite</span> - Favorite. <span class="li-normal">type: str</span> <span class="li-normal">choices: no, yes</span>
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <table border="1">
@@ -2103,7 +2103,7 @@ Parameters
  </table>
  </div>
  </li>
-            <li> <span class="li-head">is_category</span> - X-series represent category or not. <span class="li-normal">type: str</span> <span class="li-normal">choices: True, False</span>
+            <li> <span class="li-head">is_category</span> - X-series represent category or not. <span class="li-normal">type: str</span> <span class="li-normal">choices: yes, no</span>
  <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
  <div id="label93" style="display:none">
  <table border="1">

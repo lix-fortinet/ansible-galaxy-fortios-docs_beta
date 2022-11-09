@@ -343,7 +343,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">ap_country</span> - Country in which this WTP, FortiAP, or AP will operate . <span class="li-normal">type: str</span> <span class="li-normal">choices: --, AF, AL, DZ, AS, AO, AR, AM, AU, AT, AZ, BS, BH, BD, BB, BY, BE, BZ, BJ, BM, BT, BO, BA, BW, BR, BN, BG, BF, KH, CM, KY, CF, TD, CL, CN, CX, CO, CG, CD, CR, HR, CY, CZ, DK, DM, DO, EC, EG, SV, ET, EE, GF, PF, FO, FJ, FI, FR, GE, DE, GH, GI, GR, GL, GD, GP, GU, GT, GY, HT, HN, HK, HU, IS, IN, ID, IQ, IE, IM, IL, IT, CI, JM, JO, KZ, KE, KR, KW, LA, LV, LB, LS, LY, LI, LT, LU, MO, MK, MG, MW, MY, MV, ML, MT, MH, MQ, MR, MU, YT, MX, FM, MD, MC, MA, MZ, MM, NA, NP, NL, AN, AW, NZ, NI, NE, False, MP, OM, PK, PW, PA, PG, PY, PE, PH, PL, PT, PR, QA, RE, RO, RU, RW, BL, KN, LC, MF, PM, VC, SA, SN, RS, ME, SL, SG, SK, SI, ZA, ES, LK, SE, SR, CH, TW, TZ, TH, TG, TT, TN, TR, TM, AE, TC, UG, UA, GB, US, PS, UY, UZ, VU, VE, VN, VI, WF, YE, ZM, ZW, JP, CA, MN, IR, KP, SD, SY, ZB</span>
+        <li> <span class="li-head">ap_country</span> - Country in which this WTP, FortiAP, or AP will operate . <span class="li-normal">type: str</span> <span class="li-normal">choices: --, AF, AL, DZ, AS, AO, AR, AM, AU, AT, AZ, BS, BH, BD, BB, BY, BE, BZ, BJ, BM, BT, BO, BA, BW, BR, BN, BG, BF, KH, CM, KY, CF, TD, CL, CN, CX, CO, CG, CD, CR, HR, CY, CZ, DK, DM, DO, EC, EG, SV, ET, EE, GF, PF, FO, FJ, FI, FR, GE, DE, GH, GI, GR, GL, GD, GP, GU, GT, GY, HT, HN, HK, HU, IS, IN, ID, IQ, IE, IM, IL, IT, CI, JM, JO, KZ, KE, KR, KW, LA, LV, LB, LS, LY, LI, LT, LU, MO, MK, MG, MW, MY, MV, ML, MT, MH, MQ, MR, MU, YT, MX, FM, MD, MC, MA, MZ, MM, NA, NP, NL, AN, AW, NZ, NI, NE, NO, MP, OM, PK, PW, PA, PG, PY, PE, PH, PL, PT, PR, QA, RE, RO, RU, RW, BL, KN, LC, MF, PM, VC, SA, SN, RS, ME, SL, SG, SK, SI, ZA, ES, LK, SE, SR, CH, TW, TZ, TH, TG, TT, TN, TR, TM, AE, TC, UG, UA, GB, US, PS, UY, UZ, VU, VE, VN, VI, WF, YE, ZM, ZW, JP, CA, MN, IR, KP, SD, SY, ZB</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table border="1">
@@ -12576,7 +12576,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">login_passwd_change</span> - Change or reset the administrator password of a managed WTP, FortiAP or AP (yes, default, or no). <span class="li-normal">type: str</span> <span class="li-normal">choices: True, default, False</span>
+        <li> <span class="li-head">login_passwd_change</span> - Change or reset the administrator password of a managed WTP, FortiAP or AP (yes, default, or no). <span class="li-normal">type: str</span> <span class="li-normal">choices: yes, default, no</span>
  <a id='label170' href="javascript:ContentClick('label171', 'label170');" onmouseover="ContentPreview('label171');" onmouseout="ContentUnpreview('label171');" title="click to collapse or expand..."> more... </a>
  <div id="label171" style="display:none">
  <table border="1">

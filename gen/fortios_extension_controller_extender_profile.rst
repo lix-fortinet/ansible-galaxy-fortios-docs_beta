@@ -1777,7 +1777,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">login_password_change</span> - Change or reset the administrator password of a managed extender (yes, default, or no). <span class="li-normal">type: str</span> <span class="li-normal">choices: True, default, False</span>
+        <li> <span class="li-head">login_password_change</span> - Change or reset the administrator password of a managed extender (yes, default, or no). <span class="li-normal">type: str</span> <span class="li-normal">choices: yes, default, no</span>
  <a id='label154' href="javascript:ContentClick('label155', 'label154');" onmouseover="ContentPreview('label155');" onmouseout="ContentUnpreview('label155');" title="click to collapse or expand..."> more... </a>
  <div id="label155" style="display:none">
  <table border="1">

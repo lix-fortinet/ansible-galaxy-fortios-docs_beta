@@ -12475,7 +12475,7 @@ Parameters
  </table>
  </div>
  </li>
-            <li> <span class="li-head">ssl_mode</span> - SSL/TLS mode for encryption & decryption of traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: False, full</span>
+            <li> <span class="li-head">ssl_mode</span> - SSL/TLS mode for encryption & decryption of traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: off, full</span>
  <a id='label238' href="javascript:ContentClick('label239', 'label238');" onmouseover="ContentPreview('label239');" onmouseout="ContentUnpreview('label239');" title="click to collapse or expand..."> more... </a>
  <div id="label239" style="display:none">
  <table border="1">

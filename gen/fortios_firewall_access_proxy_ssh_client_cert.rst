@@ -188,7 +188,7 @@ Parameters
  </div>
  </li>
             <ul class="ul-self">
-            <li> <span class="li-head">critical</span> - Critical option. <span class="li-normal">type: str</span> <span class="li-normal">choices: False, True</span>
+            <li> <span class="li-head">critical</span> - Critical option. <span class="li-normal">type: str</span> <span class="li-normal">choices: no, yes</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <table border="1">

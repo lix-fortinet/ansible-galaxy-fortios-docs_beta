@@ -283,7 +283,7 @@ Parameters
  </div>
  </li>
             </ul>
-        <li> <span class="li-head">include_dfs_channel</span> - Enable/disable use of DFS channel in DARRP channel selection phase 1 . <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable, True, False</span>
+        <li> <span class="li-head">include_dfs_channel</span> - Enable/disable use of DFS channel in DARRP channel selection phase 1 . <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable, yes, no</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <table border="1">
@@ -392,7 +392,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">include_weather_channel</span> - Enable/disable use of weather channel in DARRP channel selection phase 1 . <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable, True, False</span>
+        <li> <span class="li-head">include_weather_channel</span> - Enable/disable use of weather channel in DARRP channel selection phase 1 . <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable, yes, no</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <table border="1">

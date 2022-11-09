@@ -1173,7 +1173,7 @@ Parameters
  </table>
  </div>
  </li>
-            <li> <span class="li-head">keyboard_layout</span> - Keyboard layout. <span class="li-normal">type: str</span> <span class="li-normal">choices: ar-101, ar-102, ar-102-azerty, can-mul, cz, cz-qwerty, cz-pr, da, nl, de, de-ch, de-ibm, en-uk, en-uk-ext, en-us, en-us-dvorak, es, es-var, fi, fi-sami, fr, fr-apple, fr-ca, fr-ch, fr-be, hr, hu, hu-101, it, it-142, ja, ko, lt, lt-ibm, lt-std, lav-std, lav-leg, mk, mk-std, False, no-sami, pol-214, pol-pr, pt, pt-br, pt-br-abnt2, ru, ru-mne, ru-t, sl, sv, sv-sami, tuk, tur-f, tur-q, zh-sym-sg-us, zh-sym-us, zh-tr-hk, zh-tr-mo, zh-tr-us</span>
+            <li> <span class="li-head">keyboard_layout</span> - Keyboard layout. <span class="li-normal">type: str</span> <span class="li-normal">choices: ar-101, ar-102, ar-102-azerty, can-mul, cz, cz-qwerty, cz-pr, da, nl, de, de-ch, de-ibm, en-uk, en-uk-ext, en-us, en-us-dvorak, es, es-var, fi, fi-sami, fr, fr-apple, fr-ca, fr-ch, fr-be, hr, hu, hu-101, it, it-142, ja, ko, lt, lt-ibm, lt-std, lav-std, lav-leg, mk, mk-std, no, no-sami, pol-214, pol-pr, pt, pt-br, pt-br-abnt2, ru, ru-mne, ru-t, sl, sv, sv-sami, tuk, tur-f, tur-q, zh-sym-sg-us, zh-sym-us, zh-tr-hk, zh-tr-mo, zh-tr-us</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <table border="1">

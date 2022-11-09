@@ -161,7 +161,7 @@ Parameters
  </div>
  </li>
         <ul class="ul-self">
-        <li> <span class="li-head">authentication</span> - Authentication algorithm. Must be the same for both ends of the tunnel. <span class="li-normal">type: str</span> <span class="li-normal">choices: None, md5, sha1, sha256, sha384, sha512</span>
+        <li> <span class="li-head">authentication</span> - Authentication algorithm. Must be the same for both ends of the tunnel. <span class="li-normal">type: str</span> <span class="li-normal">choices: null, md5, sha1, sha256, sha384, sha512</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table border="1">
@@ -482,7 +482,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">encryption</span> - Encryption algorithm. Must be the same for both ends of the tunnel. <span class="li-normal">type: str</span> <span class="li-normal">choices: None, des, 3des, aes128, aes192, aes256, aria128, aria192, aria256, seed</span>
+        <li> <span class="li-head">encryption</span> - Encryption algorithm. Must be the same for both ends of the tunnel. <span class="li-normal">type: str</span> <span class="li-normal">choices: null, des, 3des, aes128, aes192, aes256, aria128, aria192, aria256, seed</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <table border="1">
